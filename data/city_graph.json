@@ -1,0 +1,30 @@
+{
+  "_comment": "Educational sample graph. Distances are sample values in km, not real road measurements. x/y are layout positions (0-800 by 0-520) used only to draw the graph.",
+  "nodes": [
+    {"id": "University",       "x": 100, "y": 260},
+    {"id": "Kharar",           "x": 250, "y": 110},
+    {"id": "Mohali",           "x": 290, "y": 290},
+    {"id": "Airport",          "x": 540, "y": 140},
+    {"id": "Railway Station",  "x": 540, "y": 340},
+    {"id": "Sector 17",        "x": 400, "y": 450},
+    {"id": "Hospital",         "x": 220, "y": 460},
+    {"id": "Bus Stand",        "x": 680, "y": 460},
+    {"id": "Stadium",          "x": 400, "y": 40}
+  ],
+  "edges": [
+    {"from": "University",      "to": "Kharar",          "distance": 5},
+    {"from": "University",      "to": "Mohali",          "distance": 3},
+    {"from": "Kharar",          "to": "Airport",         "distance": 7},
+    {"from": "Kharar",          "to": "Sector 17",       "distance": 8},
+    {"from": "Mohali",          "to": "Airport",         "distance": 4},
+    {"from": "Mohali",          "to": "Railway Station", "distance": 6},
+    {"from": "Mohali",          "to": "Sector 17",       "distance": 4},
+    {"from": "Airport",         "to": "Railway Station", "distance": 5},
+    {"from": "Railway Station", "to": "Sector 17",       "distance": 3},
+    {"from": "Hospital",        "to": "Sector 17",       "distance": 2},
+    {"from": "Bus Stand",       "to": "Railway Station", "distance": 2},
+    {"from": "Bus Stand",       "to": "Sector 17",       "distance": 4},
+    {"from": "Stadium",         "to": "Kharar",          "distance": 4},
+    {"from": "Stadium",         "to": "Airport",         "distance": 5}
+  ]
+}
